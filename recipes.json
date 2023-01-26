@@ -1,0 +1,24 @@
+[
+    {
+        "id": 1,
+        "name": "Gaspacho tomates et figues",
+        "description": "Préférez la tomate \"coeur de boeuf\", plus charnue. N'hésitez pas à essayer la recette avec divers types de pain (campagne, céréales...)",
+        "prepare_time": 900,
+        "cooking_time": 0,
+        "wait_time": 0,
+        "picture": "https://assets.afcdn.com/recipe/20160707/2744_w2048h1536c1cx1500cy1000.webp",
+        "ingredients": "200 g de tomate, 250 g de figue, 50 poivrons, 25 g de pain, 1 dl d'huile d'olive, Sel, Piment d'Espelette",
+        "difficulty": "facile"
+    },
+    {
+        "id": 2,
+        "name": "Tourte potiron courgette",
+        "description": "La courgette rend la texture de la garniture très onctueuse",
+        "prepare_time": 1200,
+        "cooking_time": 1800,
+        "wait_time": 0,
+        "picture": "https://assets.afcdn.com/recipe/20171031/74136_w2048h1536c1cx2016cy3024cxt0cyt0cxb4032cyb6048.webp",
+        "ingredients": "2 pâtes feuilletées, 500 g de potiron cuit à la vapeur, 1 courgette râpée, 1 oignon, Persil, Poivre, Sel",
+        "difficulty": "moyenne"
+    }
+]

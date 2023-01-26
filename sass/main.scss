@@ -1,0 +1,132 @@
+@import "variables";
+@import "reset";
+
+@font-face {
+    font-family: "Filson Soft";
+    src: url("../fonts/filson-soft.eot"); /* IE9*/
+    src: url("../fonts/filson-soft.eot?#iefix") format("embedded-opentype"),
+        /* IE6-IE8 */ url("../fonts/filson-soft.woff2") format("woff2"),
+        /* chrome、firefox */ url("../fonts/filson-soft.woff") format("woff"),
+        /* chrome、firefox */ url("../fonts/filson-soft.ttf") format("truetype"),
+        /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/ url("../fonts/filson-soft.svg#Filson Soft W03 Regular")
+            format("svg"); /* iOS 4.1- */
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    background-color: #efefef;
+    padding: 2rem;
+    a{
+    text-decoration: none;
+}
+
+}
+
+.logo-wrapper {
+    padding: 2rem 0;
+    text-align: center;
+
+    .logo {
+        width: 20rem;
+    }
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem 4rem 4rem;
+    background-color: white;
+    border-radius: 1rem;
+
+    form {
+        margin-top: 1rem;
+
+        display: flex;
+        flex-wrap: wrap;
+
+        .form-group {
+            flex-basis: 100%;
+            
+            @media screen and (min-width: $md-breakpoint) {
+                flex-basis: 50%;
+            }
+
+            padding: 0 3rem;
+            margin-bottom: 2rem;
+
+            label {
+                display: block;
+                margin-bottom: 1rem;
+            }
+
+            input,
+            textarea,
+            select {
+                display: block;
+                width: 100%;
+                padding: 1rem;
+                border-radius: 2rem;
+                border: 0;
+                box-shadow: 0 0 1rem #ddd;
+            }
+
+            select {
+                // On change l'apparence par défaut du select, sinon le positionnement de la flèche n'est pas idéal
+                background: url(data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0Ljk1IDEwIj48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6I2ZmZjt9LmNscy0ye2ZpbGw6IzQ0NDt9PC9zdHlsZT48L2RlZnM+PHRpdGxlPmFycm93czwvdGl0bGU+PHJlY3QgY2xhc3M9ImNscy0xIiB3aWR0aD0iNC45NSIgaGVpZ2h0PSIxMCIvPjxwb2x5Z29uIGNsYXNzPSJjbHMtMiIgcG9pbnRzPSIxLjQxIDQuNjcgMi40OCAzLjE4IDMuNTQgNC42NyAxLjQxIDQuNjciLz48cG9seWdvbiBjbGFzcz0iY2xzLTIiIHBvaW50cz0iMy41NCA1LjMzIDIuNDggNi44MiAxLjQxIDUuMzMgMy41NCA1LjMzIi8+PC9zdmc+)
+                    no-repeat;
+                background-position: right 1rem top;
+                appearance: none;
+            }
+        }
+    }
+}
+
+h1 {
+    color: $color-primary;
+    font-family: "Filson Soft";
+    text-align: center;
+}
+
+.btn-marmiton {
+    font-family: "Filson Soft";
+    font-size: 1.8rem;
+    background-color: $color-primary;
+    color: white;
+    padding: 1rem 2rem;
+    margin: 1rem auto;
+    text-transform: uppercase;
+    border: 0;
+    border-radius: 2rem;
+}
+
+.info-success {
+    color: $color-success;
+}
+
+.info-error {
+    color: $color-error;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.recipes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .recipe {
+        flex-basis: 100%;
+
+        @media screen and (min-width: $md-breakpoint) {
+            flex-basis: 30%;
+            flex-grow: 1;
+        }
+       
+    }
+}
+
+.recipe-picture {
+    width: 100%;
+}
